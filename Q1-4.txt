@@ -1,0 +1,36 @@
+Q1:
+CONCURRENCY
+Concurrency is running multiple tasks at the same time but not simultaneoulsy.It means application is making progress on more then one task at the same time.
+Concurrency uses single Processing unit to perform multiple tasks.
+ In Concurrency, you have concurrent accesses to one or more shared resources in a system.
+There is switching over the tasks.
+PARALLELISM
+Parallelism is act of running multiple tasks simultaneously.In Parallelism an application splits its tasks into smaller subtasks which can be processed in parallel.
+Parallelsim uses Multiple processing units to perform tasks.
+There is no switching over the tasks.
+
+Q2:
+STOP EXECUTION OF A PROCESS
+To stop execution of a running process we use a command:
+$ KILL –STOP <PID>
+PID is process ID before we stop execution of a running process we have to find its process ID.We can find process ID by using a command:
+$ ps
+This command shows all the running processes in the system with their process IDs.After finding process ID we use KILL –STOP <PID> command to stop our background process.
+The process is as follows:
+$ ps (found PID)
+$ KILL –STOP 12345 (12345=PID)
+The execution of process stops after this command.To see the processes again use $ ps command.
+If we want to resume execution we can resume it by a command $KILL –CONT <PID>.This command resume the execution of process.You can again see the process running by using $ ps command.
+We can also use $KILL -19 <PID>
+Q3:
+CHANGE REFRESH TIME
+We use Delay command to refresh default time the command is:
+$ TOP –d time in sec
+We want to set time 10 sec so:
+$ TOP –d 10
+This command changes the default refresh time from 2 sec to 10 sec.
+Q4:
+There were 15 child processes.
+Hello prints 30 times.
+Exit prints 16 times.
+
