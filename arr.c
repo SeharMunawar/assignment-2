@@ -43,7 +43,7 @@ for(int i=0;i<10;i++){
    tSum=tSum+arr1[i];
 }
  
-printf("\nValue returned by Thread: %d\n",tSum);
+printf("\nTotal sum is: %d\n",tSum);
 
 return 0;
 
